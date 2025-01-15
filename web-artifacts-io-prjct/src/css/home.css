@@ -45,9 +45,15 @@
   text-align: start;
 }
 
-.card-list {
+.container-card {
+  align-items: center;
   display: flex;
-  justify-content: center;
+  width: 100%;
+}
+
+.card-list {
+  justify-content: start;
+  display: flex;
   flex-wrap: wrap;
   gap: 70px;
   padding: 50px;
