@@ -2,9 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Artifacts Web App</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -12,15 +13,8 @@
         <h1 class="logo">
           <a href="#">BRO Client1</a>
         </h1>
-        <div class="nav">
-          <ul class="nav-items">
-            <a class="nav-list active" href="#">Home</a>
-            <a class="nav-list" href="#">Bank</a>
-            <a class="nav-list" href="#">Settings</a>
-          </ul>
-        </div>
+        <div id="navigator"></div>
       </div>
-
       <div class="main">
         <div class="artifacts">
           <h2 class="art-title">ARTIFACTS MMO</h2>
@@ -75,8 +69,8 @@
         </div>
       </div>
     </div>
-    <script type="module" src="/src/css/style.css"></script>
+    <script>
+      $("#navigator").load("./src/html/nav.html");
+    </script>
   </body>
 </html>
-
-<!-- 123 -->
